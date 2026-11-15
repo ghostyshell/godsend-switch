@@ -196,8 +196,11 @@ html[data-os="mac"] .shell {
   user-select: none;
 }
 
+/* macOS: keep the brand left-aligned (like GODsend PSP) but sit the bar
+   contents below the traffic lights instead of shifting them right. */
 html[data-os="mac"] .topbar {
-  padding-left: 84px;
+  align-items: flex-end;
+  padding-bottom: 10px;
 }
 
 .topbar .brand {
