@@ -83,12 +83,30 @@ else
   done
   [ -n "$RUN_ID" ] || die "the dispatched build never appeared"
   log "waiting for CI run $RUN_ID"
-  gh run watch "$RUN_ID" --repo "$SLUG" --exit-status >/dev/null 2>&1 \
-    || die "CI run $RUN_ID did not succeed"
+  # Do not use `gh run watch`: it gives up when the API rate-limits a busy
+  # shared token, which looks like a failed build. Poll the run state instead
+  # and retry through transient API errors.
+  deadline=$((SECONDS + 5400))
+  while :; do
+    state=$(gh run view "$RUN_ID" --repo "$SLUG" --json status,conclusion \
+      --jq '"\(.status) \(.conclusion // "-")"' 2>/dev/null || true)
+    case "$state" in
+      "completed success") break ;;
+      "completed "*) die "CI run $RUN_ID finished: $state" ;;
+    esac
+    [ "$SECONDS" -ge "$deadline" ] && die "CI run $RUN_ID did not finish in 90 minutes"
+    log "  CI state: ${state:-api busy}; retrying in 30s"
+    sleep 30
+  done
   rm -rf "$DIST"
   mkdir -p "$DIST"
-  gh run download "$RUN_ID" --repo "$SLUG" --dir "$DIST" \
-    || die "artifact download failed"
+  ok=0
+  for attempt in 1 2 3; do
+    if gh run download "$RUN_ID" --repo "$SLUG" --dir "$DIST"; then ok=1; break; fi
+    log "  artifact download attempt $attempt/3 failed; retrying in 30s"
+    sleep 30
+  done
+  [ "$ok" = "1" ] || die "artifact download failed after 3 attempts"
   # Flatten the per-OS subdirectories.
   find "$DIST" -mindepth 2 -type f -exec mv {} "$DIST/" \; 2>/dev/null || true
   find "$DIST" -mindepth 1 -type d -empty -delete 2>/dev/null || true
