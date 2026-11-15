@@ -67,6 +67,10 @@ Tauri 2 plus React). The design system is inherited from GODsend PSP.
   explicit confirmation in the UI.
 - USB input from a PC is impossible: the console is the USB device. The
   virtual pad only exists through sys-con's UDP network controller.
+- The macOS title bar is an overlay: `main.tsx` sets `data-os="mac"` (real
+  app only) and the stylesheet uses an 84px row with `padding-top: 22px`.
+  Never pad left; the brand must sit under the traffic lights, not right of
+  them. Browser mock screenshots cannot verify this.
 
 ## Building and testing
 
