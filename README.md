@@ -7,9 +7,8 @@
 
 A desktop workshop for a homebrew-enabled Nintendo Switch: connect over USB,
 manage the installed library, install games and homebrew, drive the console
-with a virtual controller, and convert the files Switch tools use. Same
-family look and feel as GODsend 360 and GODsend PSP, built on the Keepsake
-Atelier stack (Rust engine + Tauri 2 + React).
+with a virtual controller, and convert the files Switch tools use. Built with
+a Rust engine, Tauri 2 and React.
 
 | Console | Library |
 | --- | --- |

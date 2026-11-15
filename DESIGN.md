@@ -1,6 +1,6 @@
 # GODsend Switch design system
 
-The same "midnight console" family as GODsend PSP and GODsend 360: near-black
+The "midnight console" look: near-black
 ink, one laser accent spectrum, brass as the warm note, hairline glass
 surfaces, monospaced data, staggered entrances, and a hard reduced-motion kill
 switch.
