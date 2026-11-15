@@ -180,7 +180,7 @@ body {
 }
 
 html[data-os="mac"] .shell {
-  grid-template-rows: 78px minmax(0, 1fr) 34px;
+  grid-template-rows: 84px minmax(0, 1fr) 34px;
 }
 
 /* topbar */
@@ -196,11 +196,10 @@ html[data-os="mac"] .shell {
   user-select: none;
 }
 
-/* macOS: keep the brand left-aligned (like GODsend PSP) but sit the bar
-   contents below the traffic lights instead of shifting them right. */
+/* macOS: keep the brand left-aligned (like GODsend PSP) and pad the bar from
+   the top so the contents sit below the traffic lights, not right of them. */
 html[data-os="mac"] .topbar {
-  align-items: flex-end;
-  padding-bottom: 10px;
+  padding-top: 22px;
 }
 
 .topbar .brand {

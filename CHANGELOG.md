@@ -40,8 +40,8 @@ First release.
   their base.
 - Settings saves are atomic; FTP connects time out; folder uploads skip
   symlinks; remote download names cannot escape the download folder.
-- macOS keeps the brand left-aligned like GODsend PSP, sitting it below the
-  traffic lights instead of shifting it right.
+- macOS uses an 84px bar padded 22px from the top, so the brand sits below
+  the traffic lights and stays left-aligned, the same fix as GODsend PSP.
 
 ### Notes
 
