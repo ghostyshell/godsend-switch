@@ -65,7 +65,15 @@ Step-by-step walkthroughs live in [docs/guides](docs/guides/index.md):
 <!-- downloads:start -->
 | Build | GoFile (primary) | file.kiwi (backup) | Size |
 | --- | --- | --- | --- |
-| pending | pending | pending | |
+| `godsend-switch-0.1.0-linux-x64.AppImage` | [Download](https://gofile.io/d/TuX23T86) | [Mirror](https://file.kiwi/63795a8a#o_KhB8HfaKJcS7qkmBLpaA) | 80.3 MiB |
+| `godsend-switch-cli-0.1.0-linux-x64.tar.gz` | [Download](https://gofile.io/d/gNJ3a1un) | [Mirror](https://file.kiwi/b97504d5#iCXJM9WKHnWpr5PgKQyydw) | 2.2 MiB |
+| `godsend-switch-cli-0.1.0-macos-arm64.tar.gz` | [Download](https://gofile.io/d/0Rm5nzf0) | [Mirror](https://file.kiwi/bed89326#WbKeoYMSJnSmbcE3ME7RJg) | 2.0 MiB |
+| `godsend-switch-cli-0.1.0-macos-x64.tar.gz` | [Download](https://gofile.io/d/19eR2piu) | [Mirror](https://file.kiwi/6ff77a50#2g7TxbkfvltQORaU0_IHbQ) | 2.1 MiB |
+| `godsend-switch-cli-0.1.0-windows-x64.zip` | [Download](https://gofile.io/d/XGhDyMrt) | [Mirror](https://file.kiwi/9681f360#3Szvrmm5OZEFIriM1l5XZQ) | 2.4 MiB |
+| `godsend-switch-0.1.0-linux-x64.deb` | [Download](https://gofile.io/d/xI4RpJEw) | [Mirror](https://file.kiwi/07c1dbd5#B9PoTzx5KQ7BT2u3IR_djg) | 5.5 MiB |
+| `godsend-switch-0.1.0-arm64.dmg` | [Download](https://gofile.io/d/xys9My1H) | [Mirror](https://file.kiwi/c1f81d08#9lFpZLCll5pAhTSTJHjxoA) | 5.5 MiB |
+| `godsend-switch-0.1.0-x64.dmg` | [Download](https://gofile.io/d/goFKjkEn) | [Mirror](https://file.kiwi/7ced4211#sHZ50zP0kdU0vn8FpVucIA) | 5.9 MiB |
+| `godsend-switch-0.1.0-x64-setup.exe` | [Download](https://gofile.io/d/15plL1v3) | [Mirror](https://file.kiwi/786294e5#yM-mbuClAxpjNwMfZ4hHXA) | 3.8 MiB |
 <!-- downloads:end -->
 
 GoFile is the primary host and file.kiwi is the encrypted backup. Links are

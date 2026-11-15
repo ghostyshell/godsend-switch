@@ -1,5 +1,78 @@
 {
   "version": "0.1.0",
   "updated": "2026-11-15",
-  "artifacts": []
+  "artifacts": [
+    {
+      "name": "godsend-switch-0.1.0-linux-x64.AppImage",
+      "label": "Linux (x86_64, AppImage)",
+      "gofile": "https://gofile.io/d/TuX23T86",
+      "kiwi": "https://file.kiwi/63795a8a#o_KhB8HfaKJcS7qkmBLpaA",
+      "size": "80.3 MiB",
+      "sha256": "38a8eeee5153518422d723992bbb0ce8a9d9c7067195731d6bbd04f00d25109d"
+    },
+    {
+      "name": "godsend-switch-cli-0.1.0-linux-x64.tar.gz",
+      "label": "Linux (x86_64, CLI + MCP)",
+      "gofile": "https://gofile.io/d/gNJ3a1un",
+      "kiwi": "https://file.kiwi/b97504d5#iCXJM9WKHnWpr5PgKQyydw",
+      "size": "2.2 MiB",
+      "sha256": "998d40e562763b8166ddf2f48de0690739ee221de9dd3600598bd573838227f8"
+    },
+    {
+      "name": "godsend-switch-cli-0.1.0-macos-arm64.tar.gz",
+      "label": "macOS (Apple Silicon, CLI + MCP)",
+      "gofile": "https://gofile.io/d/0Rm5nzf0",
+      "kiwi": "https://file.kiwi/bed89326#WbKeoYMSJnSmbcE3ME7RJg",
+      "size": "2.0 MiB",
+      "sha256": "b69b6c1631f77cda68ed0c6fc38ba6aaa65f8408e3d5bb034c4490158b2f70e4"
+    },
+    {
+      "name": "godsend-switch-cli-0.1.0-macos-x64.tar.gz",
+      "label": "macOS (Intel, CLI + MCP)",
+      "gofile": "https://gofile.io/d/19eR2piu",
+      "kiwi": "https://file.kiwi/6ff77a50#2g7TxbkfvltQORaU0_IHbQ",
+      "size": "2.1 MiB",
+      "sha256": "000bdb239f51ee54711df35396bac64b8a2b395bc1bc44d9506b75d234a9c8d5"
+    },
+    {
+      "name": "godsend-switch-cli-0.1.0-windows-x64.zip",
+      "label": "Windows (x86_64, CLI + MCP)",
+      "gofile": "https://gofile.io/d/XGhDyMrt",
+      "kiwi": "https://file.kiwi/9681f360#3Szvrmm5OZEFIriM1l5XZQ",
+      "size": "2.4 MiB",
+      "sha256": "84b9f9c090a24487e5842791114516ad43dcc88777fc56f0a423d368161b96a4"
+    },
+    {
+      "name": "godsend-switch-0.1.0-linux-x64.deb",
+      "label": "Linux (x86_64, deb)",
+      "gofile": "https://gofile.io/d/xI4RpJEw",
+      "kiwi": "https://file.kiwi/07c1dbd5#B9PoTzx5KQ7BT2u3IR_djg",
+      "size": "5.5 MiB",
+      "sha256": "9bdafeea9121b9be96b142acc2ccdbbbdf8f21e21ffd0baafd3663d8b0979d27"
+    },
+    {
+      "name": "godsend-switch-0.1.0-arm64.dmg",
+      "label": "macOS (Apple Silicon)",
+      "gofile": "https://gofile.io/d/xys9My1H",
+      "kiwi": "https://file.kiwi/c1f81d08#9lFpZLCll5pAhTSTJHjxoA",
+      "size": "5.5 MiB",
+      "sha256": "10b96f80d0c1121c0bb617ce37f5f26622bda37f09a04aa7a70243c65cae48bb"
+    },
+    {
+      "name": "godsend-switch-0.1.0-x64.dmg",
+      "label": "macOS (Intel)",
+      "gofile": "https://gofile.io/d/goFKjkEn",
+      "kiwi": "https://file.kiwi/7ced4211#sHZ50zP0kdU0vn8FpVucIA",
+      "size": "5.9 MiB",
+      "sha256": "6b6f2c889c173b84338e70d75fd7ed2d66f3a50944b7cc1720a12efc042253db"
+    },
+    {
+      "name": "godsend-switch-0.1.0-x64-setup.exe",
+      "label": "Windows (x86_64, installer)",
+      "gofile": "https://gofile.io/d/15plL1v3",
+      "kiwi": "https://file.kiwi/786294e5#yM-mbuClAxpjNwMfZ4hHXA",
+      "size": "3.8 MiB",
+      "sha256": "7e5726244d22dbcea86875d2b834e7dd9d078cb3caef75a34a9d9ce0ebadd518"
+    }
+  ]
 }
