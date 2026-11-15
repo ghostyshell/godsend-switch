@@ -1,0 +1,35 @@
+[workspace]
+resolver = "2"
+members = ["core", "cli", "app/src-tauri"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["GODsend Switch"]
+repository = "https://github.com/ghostyshell/godsend-switch"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+ureq = { version = "2", features = ["json", "tls"] }
+directories = "5"
+fs4 = "0.13"
+suppaftp = "6"
+mtp-rs = "0.38"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "net", "io-util", "time", "sync", "fs"] }
+tokio-util = { version = "0.7", features = ["io"] }
+bytes = "1"
+futures = "0.3"
+nusb = "0.2"
+zip = { version = "2", default-features = false, features = ["deflate"] }
+aes = "0.8"
+cbc = "0.1"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true

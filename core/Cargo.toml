@@ -1,0 +1,24 @@
+[package]
+name = "godsend-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+description = "Switch device engine: MTP, Tinfoil USB and FTP transfers, library scanning, sys-con virtual pad, NSP tools"
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+ureq.workspace = true
+directories.workspace = true
+fs4.workspace = true
+suppaftp.workspace = true
+mtp-rs.workspace = true
+tokio.workspace = true
+tokio-util.workspace = true
+bytes.workspace = true
+futures.workspace = true
+nusb.workspace = true

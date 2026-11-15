@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GODsend Switch - USB library, installs and virtual pad for the Switch</title>
+<meta name="description" content="Desktop workshop for a homebrew Switch: MTP over USB, Tinfoil and LAN installs, library, homebrew, files, FAT32 splits and a sys-con virtual pad. MCP server included." />
+<meta property="og:title" content="GODsend Switch" />
+<meta property="og:description" content="Manage the console over USB: library, installs, homebrew, files and a virtual pad." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="og.png" />
+<link rel="icon" type="image/png" href="icon.png" />
+<link rel="stylesheet" href="site.css" />
+</head>
+<body>
+<div class="glow"></div>
+<header>
+  <a class="brand" href="./"><img class="mark" src="icon.png" alt="" /><span>GODsend Switch</span></a>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#screens">Screens</a>
+    <a href="#downloads">Downloads</a>
+    <a href="https://github.com/ghostyshell/godsend-switch/blob/main/docs/guides/index.md">Guides</a>
+    <a href="https://github.com/ghostyshell/godsend-switch">GitHub</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="eyebrow">MTP OVER USB · TINFOIL · LAN INSTALL</div>
+    <h1>A workshop for<br /><span class="laser">your Switch.</span></h1>
+    <p class="lead">
+      Plug the console in, open one window. Browse the SD card and installed
+      titles, install games and homebrew, move files both ways, split packages
+      for FAT32, and drive the console with a virtual pad. Everything is a
+      cancellable job, and an MCP server ships with the app.
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="#downloads">Download</a>
+      <a class="btn" href="https://github.com/ghostyshell/godsend-switch/blob/main/docs/guides/index.md">Read the guides</a>
+      <a class="btn" href="https://discord.gg/d3sFnrgpJn">Discord</a>
+    </div>
+    <div class="chips">
+      <span class="chip"><i class="dot"></i>macOS, Windows, Linux</span>
+      <span class="chip"><i class="dot"></i>Rust engine + Tauri</span>
+      <span class="chip"><i class="dot"></i>aria2c downloads</span>
+      <span class="chip"><i class="dot"></i>MCP for agents</span>
+    </div>
+  </section>
+
+  <section id="screens" class="screens">
+    <a class="shot" href="site-console.png" aria-label="Open the console screenshot">
+      <img src="site-console.png" alt="Console page with storages and preflight checks" loading="lazy" />
+    </a>
+    <a class="shot" href="site-library.png" aria-label="Open the library screenshot">
+      <img src="site-library.png" alt="Installed titles with box art and monograms" loading="lazy" />
+    </a>
+    <a class="shot" href="site-controller.png" aria-label="Open the controller screenshot">
+      <img src="site-controller.png" alt="Virtual pad with face buttons, D-pad and sticks" loading="lazy" />
+    </a>
+  </section>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <div class="lb-toolbar" role="toolbar" aria-label="Screenshot controls">
+      <button class="lb-btn" data-zoom="out" aria-label="Zoom out">-</button>
+      <span class="lb-scale" id="lb-scale">100%</span>
+      <button class="lb-btn" data-zoom="in" aria-label="Zoom in">+</button>
+      <button class="lb-btn lb-close" aria-label="Close the screenshot">Close</button>
+    </div>
+    <img id="lightbox-img" alt="" />
+  </div>
+
+  <section id="features">
+    <h2>Everything on the console</h2>
+    <div class="grid">
+      <article>
+        <h3>MTP over USB</h3>
+        <p>DBI or Sphaira in MTP mode exposes the SD card, NAND, installed
+        games, saves, album and the two install folders. The app reads and
+        writes all of them without drivers.</p>
+      </article>
+      <article>
+        <h3>Tinfoil and LAN installs</h3>
+        <p>The Tinfoil bulk protocol over USB, or Awoo's TCP 2000 listener with
+        the app serving ranges over HTTP. Drop a package in SD install and DBI
+        installs it on arrival.</p>
+      </article>
+      <article>
+        <h3>Library</h3>
+        <p>Installed titles and local NSP/NSZ/XCI/XCZ files side by side,
+        title ids parsed from names, box art with monogram fallback.</p>
+      </article>
+      <article>
+        <h3>Virtual pad</h3>
+        <p>sys-con's network controller over UDP: face and shoulder buttons,
+        D-pad, both sticks, HOME and Capture, keyboard mapping, press and
+        hold.</p>
+      </article>
+      <article>
+        <h3>Files</h3>
+        <p>Two panes, local and console. Upload, download, create folders and
+        delete on any MTP storage, with FTP as a fallback transport.</p>
+      </article>
+      <article>
+        <h3>Downloads and game index</h3>
+        <p>Search a Switch index or the Internet Archive, resolve through
+        Real-Debrid or TorBox, download with aria2c at 16 connections.</p>
+      </article>
+      <article>
+        <h3>Homebrew</h3>
+        <p>Catalog of NRO projects from GitHub releases, pushed to /switch:
+        App Store, ftpd, sys-con, NX-Shell, DBI, Awoo and more.</p>
+      </article>
+      <article>
+        <h3>Conversions and MCP</h3>
+        <p>Inspect packages, split for FAT32 into .00 parts and merge them
+        back. The app hosts an MCP server so agents can drive the same
+        engine.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="downloads">
+    <h2>Downloads</h2>
+    <p class="muted" id="downloads-note">
+      CI builds every platform on each tag. Links appear here once a release is
+      published.
+    </p>
+    <div class="downloads" id="downloads-table">
+      <p class="muted">Loading the current links from downloads.json...</p>
+    </div>
+  </section>
+
+  <section id="guides">
+    <h2>Guides</h2>
+    <div class="grid guides">
+      <a href="https://github.com/ghostyshell/godsend-switch/blob/main/docs/guides/connect-your-switch.md">Connect your Switch</a>
+      <a href="https://github.com/ghostyshell/godsend-switch/blob/main/docs/guides/installing-games.md">Installing games</a>
+      <a href="https://github.com/ghostyshell/godsend-switch/blob/main/docs/guides/homebrew-and-syscon.md">Homebrew and sys-con</a>
+      <a href="https://github.com/ghostyshell/godsend-switch/blob/main/docs/guides/controller.md">Virtual controller</a>
+      <a href="https://github.com/ghostyshell/godsend-switch/blob/main/docs/guides/conversions.md">Conversions</a>
+      <a href="https://github.com/ghostyshell/godsend-switch/blob/main/docs/guides/troubleshooting.md">Troubleshooting</a>
+      <a href="https://github.com/ghostyshell/godsend-switch/blob/main/docs/guides/build-from-source.md">Build from source</a>
+      <a href="https://github.com/ghostyshell/godsend-switch">Source on GitHub</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <a class="brand" href="./"><img class="mark" src="icon.png" alt="" /><span>GODsend Switch</span></a>
+  <div class="links">
+    <a href="https://ko-fi.com/ghosty99">Ko-fi</a>
+    <a href="https://discord.gg/d3sFnrgpJn">Discord</a>
+    <a href="https://github.com/ghostyshell/godsend-switch">GitHub</a>
+  </div>
+  <p class="muted">MIT. Not affiliated with Nintendo. Use with content you own.</p>
+</footer>
+
+<script>
+// Screenshot modal: transparent backdrop, centred, zoom in/out, close.
+(function () {
+  const box = document.getElementById("lightbox");
+  const img = document.getElementById("lightbox-img");
+  const scaleLabel = document.getElementById("lb-scale");
+  let scale = 1;
+  const apply = () => {
+    img.style.transform = `scale(${scale})`;
+    scaleLabel.textContent = Math.round(scale * 100) + "%";
+  };
+  const close = () => {
+    box.hidden = true;
+    img.src = "";
+    scale = 1;
+    apply();
+  };
+  const open = (href, alt) => {
+    img.src = href;
+    img.alt = alt;
+    scale = 1;
+    apply();
+    box.hidden = false;
+  };
+  document.querySelectorAll(".shot").forEach((a) => {
+    a.addEventListener("click", (e) => {
+      e.preventDefault();
+      open(a.getAttribute("href"), a.querySelector("img")?.alt ?? "");
+    });
+  });
+  box.querySelector("[data-zoom='in']").addEventListener("click", (e) => {
+    e.stopPropagation();
+    scale = Math.min(4, scale + 0.25);
+    apply();
+  });
+  box.querySelector("[data-zoom='out']").addEventListener("click", (e) => {
+    e.stopPropagation();
+    scale = Math.max(0.5, scale - 0.25);
+    apply();
+  });
+  box.querySelector(".lb-close").addEventListener("click", (e) => {
+    e.stopPropagation();
+    close();
+  });
+  img.addEventListener("click", (e) => e.stopPropagation());
+  box.addEventListener("click", close);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") close();
+    if (box.hidden) return;
+    if (e.key === "+" || e.key === "=") { scale = Math.min(4, scale + 0.25); apply(); }
+    if (e.key === "-") { scale = Math.max(0.5, scale - 0.25); apply(); }
+  });
+})();
+
+fetch("downloads.json?v=" + Date.now(), { cache: "no-store" }).then(r => r.json()).then(data => {
+  const el = document.getElementById("downloads-table");
+  if (!data.artifacts || !data.artifacts.length) return;
+  let html = '<table><thead><tr><th>Build</th><th>GoFile</th><th>file.kiwi</th><th>Size</th></tr></thead><tbody>';
+  for (const a of data.artifacts) {
+    const g = a.gofile && a.gofile !== "EMPTY" ? `<a href="${a.gofile}">Download</a>` : "pending";
+    const k = a.kiwi && a.kiwi !== "EMPTY" ? `<a href="${a.kiwi}">Mirror</a>` : "pending";
+    html += `<tr><td><code>${a.name}</code></td><td>${g}</td><td>${k}</td><td>${a.size || ""}</td></tr>`;
+  }
+  html += "</tbody></table>";
+  el.innerHTML = html;
+  const note = document.getElementById("downloads-note");
+  if (data.version) note.textContent += ` Current build: ${data.version}.`;
+}).catch(() => {});
+</script>
+</body>
+</html>
