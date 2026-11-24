@@ -44,13 +44,13 @@
    Outputs `docs/site-console.png`, `site-library.png`, `site-games.png`,
    `site-store.png`, `site-homebrew.png`.
 3. Commit, then `scripts/publish-release.sh` to build all platforms and
-   upload to GoFile + file.kiwi.
+   upload to Cloudflare R2.
 4. Confirm the live feed check the script prints.
 
 ## Release
 
 `scripts/publish-release.sh` reads the version from `tauri.conf.json` and
-uploads that build to GoFile and file.kiwi. Bump first, publish second.
+uploads that build to Cloudflare R2. Bump first, publish second.
 
 The script also rewrites the README table and `docs/downloads.json`, then
 verifies the live site feed with a cache-busted request
