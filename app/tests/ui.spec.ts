@@ -80,3 +80,10 @@ test("settings exposes transport and MCP controls", async ({ page }) => {
 test("inspector queue shows the seeded jobs", async ({ page }) => {
   await expect(page.locator(".queue-card .job-row")).toHaveCount(2);
 });
+
+test("unslop-anything a11y pass", async ({ page }) => {
+  await nav(page, "Library");
+  await expect(page.getByRole("textbox", { name: "Filter by title" })).toBeVisible();
+  await nav(page, "Game Index");
+  await expect(page.getByRole("textbox", { name: /Search/ })).toBeVisible();
+});

@@ -55,6 +55,7 @@ export default function GameStore({ snap, toast }: PageProps) {
         />
         <input
           className="input grow"
+          aria-label={source === "index" ? "Search Switch games" : "Search archive.org"}
           placeholder={source === "index" ? "Search Switch games" : "Search archive.org"}
           value={query}
           onChange={(e) => setQuery(e.target.value)}

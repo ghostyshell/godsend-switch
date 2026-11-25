@@ -59,6 +59,7 @@ export default function Library({ snap, toast, reload, refreshKey }: PageProps) 
         <div className="spacer" />
         <input
           className="input"
+          aria-label="Filter by title"
           placeholder="Filter by title"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
