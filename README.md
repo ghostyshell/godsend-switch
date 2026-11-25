@@ -64,15 +64,15 @@ Step-by-step walkthroughs live in [docs/guides](docs/guides/index.md):
 <!-- downloads:start -->
 | Build | Download | Size |
 | --- | --- | --- |
-| `godsend-switch-0.1.0-arm64.dmg` | [Download](https://covers.debrid.in/godsend-switch/releases/0.1.0/godsend-switch-0.1.0-arm64.dmg) | 5.5 MiB |
-| `godsend-switch-0.1.0-x64.dmg` | [Download](https://covers.debrid.in/godsend-switch/releases/0.1.0/godsend-switch-0.1.0-x64.dmg) | 5.9 MiB |
-| `godsend-switch-0.1.0-x64-setup.exe` | [Download](https://covers.debrid.in/godsend-switch/releases/0.1.0/godsend-switch-0.1.0-x64-setup.exe) | 3.8 MiB |
-| `godsend-switch-0.1.0-linux-x64.AppImage` | [Download](https://covers.debrid.in/godsend-switch/releases/0.1.0/godsend-switch-0.1.0-linux-x64.AppImage) | 80.3 MiB |
-| `godsend-switch-0.1.0-linux-x64.deb` | [Download](https://covers.debrid.in/godsend-switch/releases/0.1.0/godsend-switch-0.1.0-linux-x64.deb) | 5.5 MiB |
-| `godsend-switch-cli-0.1.0-linux-x64.tar.gz` | [Download](https://covers.debrid.in/godsend-switch/releases/0.1.0/godsend-switch-cli-0.1.0-linux-x64.tar.gz) | 2.2 MiB |
-| `godsend-switch-cli-0.1.0-macos-arm64.tar.gz` | [Download](https://covers.debrid.in/godsend-switch/releases/0.1.0/godsend-switch-cli-0.1.0-macos-arm64.tar.gz) | 2.0 MiB |
-| `godsend-switch-cli-0.1.0-macos-x64.tar.gz` | [Download](https://covers.debrid.in/godsend-switch/releases/0.1.0/godsend-switch-cli-0.1.0-macos-x64.tar.gz) | 2.1 MiB |
-| `godsend-switch-cli-0.1.0-windows-x64.zip` | [Download](https://covers.debrid.in/godsend-switch/releases/0.1.0/godsend-switch-cli-0.1.0-windows-x64.zip) | 2.4 MiB |
+| `godsend-switch-0.1.1-arm64.dmg` | [Download](https://covers.debrid.in/godsend-switch/releases/0.1.1/godsend-switch-0.1.1-arm64.dmg) | 5.5 MiB |
+| `godsend-switch-0.1.1-x64.dmg` | [Download](https://covers.debrid.in/godsend-switch/releases/0.1.1/godsend-switch-0.1.1-x64.dmg) | 5.9 MiB |
+| `godsend-switch-0.1.1-x64-setup.exe` | [Download](https://covers.debrid.in/godsend-switch/releases/0.1.1/godsend-switch-0.1.1-x64-setup.exe) | 3.8 MiB |
+| `godsend-switch-0.1.1-linux-x64.AppImage` | [Download](https://covers.debrid.in/godsend-switch/releases/0.1.1/godsend-switch-0.1.1-linux-x64.AppImage) | 80.3 MiB |
+| `godsend-switch-0.1.1-linux-x64.deb` | [Download](https://covers.debrid.in/godsend-switch/releases/0.1.1/godsend-switch-0.1.1-linux-x64.deb) | 5.5 MiB |
+| `godsend-switch-cli-0.1.1-linux-x64.tar.gz` | [Download](https://covers.debrid.in/godsend-switch/releases/0.1.1/godsend-switch-cli-0.1.1-linux-x64.tar.gz) | 2.2 MiB |
+| `godsend-switch-cli-0.1.1-macos-arm64.tar.gz` | [Download](https://covers.debrid.in/godsend-switch/releases/0.1.1/godsend-switch-cli-0.1.1-macos-arm64.tar.gz) | 2.0 MiB |
+| `godsend-switch-cli-0.1.1-macos-x64.tar.gz` | [Download](https://covers.debrid.in/godsend-switch/releases/0.1.1/godsend-switch-cli-0.1.1-macos-x64.tar.gz) | 2.1 MiB |
+| `godsend-switch-cli-0.1.1-windows-x64.zip` | [Download](https://covers.debrid.in/godsend-switch/releases/0.1.1/godsend-switch-cli-0.1.1-windows-x64.zip) | 2.4 MiB |
 <!-- downloads:end -->
 
 Builds are hosted on Cloudflare R2, so a link stays valid until the next

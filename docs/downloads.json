@@ -1,69 +1,69 @@
 {
-  "version": "0.1.0",
-  "updated": "2026-11-24",
+  "version": "0.1.1",
+  "updated": "2026-11-25",
   "artifacts": [
     {
-      "name": "godsend-switch-0.1.0-arm64.dmg",
+      "name": "godsend-switch-0.1.1-arm64.dmg",
       "label": "macOS (Apple Silicon)",
-      "url": "https://covers.debrid.in/godsend-switch/releases/0.1.0/godsend-switch-0.1.0-arm64.dmg",
+      "url": "https://covers.debrid.in/godsend-switch/releases/0.1.1/godsend-switch-0.1.1-arm64.dmg",
       "size": "5.5 MiB",
-      "sha256": "12049b56a7e59ca6cb47f7dc3aef1775654fb4147169a68ded9d834476c7f509"
+      "sha256": "3ae2cb4133ba5a92b2eaaa8c5047a1abb680bac522a6afe613eea543296b68d7"
     },
     {
-      "name": "godsend-switch-0.1.0-x64.dmg",
+      "name": "godsend-switch-0.1.1-x64.dmg",
       "label": "macOS (Intel)",
-      "url": "https://covers.debrid.in/godsend-switch/releases/0.1.0/godsend-switch-0.1.0-x64.dmg",
+      "url": "https://covers.debrid.in/godsend-switch/releases/0.1.1/godsend-switch-0.1.1-x64.dmg",
       "size": "5.9 MiB",
-      "sha256": "d0f00b68258402d0bae4acb224dad8a61fb15858d32af8d647a6cd35650a53d1"
+      "sha256": "9e1952cb025121985aff4856786302ca060a0b49c2de7ae386ba4a8623e0012e"
     },
     {
-      "name": "godsend-switch-0.1.0-x64-setup.exe",
+      "name": "godsend-switch-0.1.1-x64-setup.exe",
       "label": "Windows (x86_64, installer)",
-      "url": "https://covers.debrid.in/godsend-switch/releases/0.1.0/godsend-switch-0.1.0-x64-setup.exe",
+      "url": "https://covers.debrid.in/godsend-switch/releases/0.1.1/godsend-switch-0.1.1-x64-setup.exe",
       "size": "3.8 MiB",
-      "sha256": "a655ef1fbd2093efb0a402d2cf38acc4c597c17f25ef2c5ac24a0dc86012ad48"
+      "sha256": "9116d96bebf327c58180d9b8a1bb5ebed5bf5fa263ba132af8e32b8e4bac4298"
     },
     {
-      "name": "godsend-switch-0.1.0-linux-x64.AppImage",
+      "name": "godsend-switch-0.1.1-linux-x64.AppImage",
       "label": "Linux (x86_64, AppImage)",
-      "url": "https://covers.debrid.in/godsend-switch/releases/0.1.0/godsend-switch-0.1.0-linux-x64.AppImage",
+      "url": "https://covers.debrid.in/godsend-switch/releases/0.1.1/godsend-switch-0.1.1-linux-x64.AppImage",
       "size": "80.3 MiB",
-      "sha256": "b6c62caebc06fb97d0646a2fa044c0fe5b8496c988f00c5632ecdbe4d4fd8167"
+      "sha256": "0e948f6f3e0ed0bbe26159787d1d51dca790e99118ec81c2528e8d9acbaaca72"
     },
     {
-      "name": "godsend-switch-0.1.0-linux-x64.deb",
+      "name": "godsend-switch-0.1.1-linux-x64.deb",
       "label": "Linux (x86_64, deb)",
-      "url": "https://covers.debrid.in/godsend-switch/releases/0.1.0/godsend-switch-0.1.0-linux-x64.deb",
+      "url": "https://covers.debrid.in/godsend-switch/releases/0.1.1/godsend-switch-0.1.1-linux-x64.deb",
       "size": "5.5 MiB",
-      "sha256": "ac9c0b94da89121a36e52d7492fe6ebf892aa04ba5446da60a9a3a8cd32059be"
+      "sha256": "2f0948867a6ef3161dc7702eab8597f2b35b72abccbc548341293bbf962edda5"
     },
     {
-      "name": "godsend-switch-cli-0.1.0-linux-x64.tar.gz",
+      "name": "godsend-switch-cli-0.1.1-linux-x64.tar.gz",
       "label": "Linux (x86_64, CLI + MCP)",
-      "url": "https://covers.debrid.in/godsend-switch/releases/0.1.0/godsend-switch-cli-0.1.0-linux-x64.tar.gz",
+      "url": "https://covers.debrid.in/godsend-switch/releases/0.1.1/godsend-switch-cli-0.1.1-linux-x64.tar.gz",
       "size": "2.2 MiB",
-      "sha256": "69e775534d0565b3c708dc61bc750088af5869fe852126a81ca8c60ba95273d1"
+      "sha256": "6465efbc4a893dd84d3a71b14a13fdddb347b468b7f18516aca95b128bed40b0"
     },
     {
-      "name": "godsend-switch-cli-0.1.0-macos-arm64.tar.gz",
+      "name": "godsend-switch-cli-0.1.1-macos-arm64.tar.gz",
       "label": "macOS (Apple Silicon, CLI + MCP)",
-      "url": "https://covers.debrid.in/godsend-switch/releases/0.1.0/godsend-switch-cli-0.1.0-macos-arm64.tar.gz",
+      "url": "https://covers.debrid.in/godsend-switch/releases/0.1.1/godsend-switch-cli-0.1.1-macos-arm64.tar.gz",
       "size": "2.0 MiB",
-      "sha256": "c5c5cfd4cb69bd4182604267e62d34e5f025d705c4aa8f726485fbb4fb9098f9"
+      "sha256": "4fb0eca90c2ec41442484dad8ba07f9828f72ebcbcba47d1327c52cd78adc591"
     },
     {
-      "name": "godsend-switch-cli-0.1.0-macos-x64.tar.gz",
+      "name": "godsend-switch-cli-0.1.1-macos-x64.tar.gz",
       "label": "macOS (Intel, CLI + MCP)",
-      "url": "https://covers.debrid.in/godsend-switch/releases/0.1.0/godsend-switch-cli-0.1.0-macos-x64.tar.gz",
+      "url": "https://covers.debrid.in/godsend-switch/releases/0.1.1/godsend-switch-cli-0.1.1-macos-x64.tar.gz",
       "size": "2.1 MiB",
-      "sha256": "04d33d113e92d483ae869894451d914fe22b811584467f12cb05f8871669d85f"
+      "sha256": "5b87df7b07ed1de9a8cf0786464893baa8a55080b2674086b2281400dcc61e43"
     },
     {
-      "name": "godsend-switch-cli-0.1.0-windows-x64.zip",
+      "name": "godsend-switch-cli-0.1.1-windows-x64.zip",
       "label": "Windows (x86_64, CLI + MCP)",
-      "url": "https://covers.debrid.in/godsend-switch/releases/0.1.0/godsend-switch-cli-0.1.0-windows-x64.zip",
+      "url": "https://covers.debrid.in/godsend-switch/releases/0.1.1/godsend-switch-cli-0.1.1-windows-x64.zip",
       "size": "2.4 MiB",
-      "sha256": "48fa0287943c0117989f3ff8ee699a5341ccd5e90cc51866025e08deb77ceb39"
+      "sha256": "ab646e70c3ae274612e9cebf68ca7919a0f6f158429f9c7831c76c01fec24f6f"
     }
   ]
 }
