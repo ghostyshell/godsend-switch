@@ -1425,7 +1425,7 @@ dependencies = [
 
 [[package]]
 name = "godsend-core"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "bytes",
  "directories",
@@ -1445,7 +1445,7 @@ dependencies = [
 
 [[package]]
 name = "godsend-switch-app"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "base64 0.22.1",
  "godsend-core",
@@ -1462,7 +1462,7 @@ dependencies = [
 
 [[package]]
 name = "godsend-switch-cli"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "godsend-core",
 ]
